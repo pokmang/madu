@@ -14,20 +14,28 @@ class Memberarea extends React.Component {
       names: [
          {
             id: 0,
-            name: 'Ben',
+            name: 'Muslim',
          },
          {
             id: 1,
-            name: 'Susan',
+            name: 'Usman',
          },
          {
             id: 2,
-            name: 'Robert',
+            name: 'Soffee',
          },
          {
             id: 3,
-            name: 'Mary',
-         }
+            name: 'Ruslam',
+         },
+         {
+            id: 3,
+            name: 'Nashan',
+         },
+         {
+            id: 3,
+            name: 'Masran',
+         },
       ]
    }
    alertItemName = (item) => {
@@ -41,8 +49,8 @@ class Memberarea extends React.Component {
 
       return (
 
-         <View style={{ backgroundColor: '#yellow', width: '100%', height: '100%', justifyContent: 'center' }}  >
-            <Text style={styles.title}>MADU EVENTS</Text>
+         <View>
+            <Text style={styles.title}>MADU MEMBER</Text>
             {
                this.state.names.map((item, index) => (
                   <TouchableOpacity
@@ -79,28 +87,59 @@ export default Memberarea;
 
 const styles = StyleSheet.create({
    container: {
+      alignItems: 'center',
+      justifyContent: 'flex-end',
+      width: '100%',
+      height: '11%',
+      backgroundColor: '#00FA9A'
 
    },
+
+  
    title: {
       color: 'black',
-      alignSelf: 'center',      
+      alignSelf: 'center',
       fontSize: 30,
       backgroundColor: 'yellow',
       margin: 15,
       height: 55,
-      width: 200,
+      width: 240,
       borderColor: '#7a42f4',
       borderWidth: 2,
-      borderRadius:10,
+      borderRadius: 10,
       padding: 8,
+      marginTop: 50
+
 
    },
    text: {
-      color: '#4f603c'
+      
+      color: 'black',
+      alignSelf: 'center',
+      fontSize: 30,
+      backgroundColor: '#00FFFF',
+      margin: 15,
+      height: 55,
+      width: 350,
+      borderColor: '#7a42f4',
+      borderWidth: 2,
+      borderRadius: 5,
+      padding: 8,
+      marginTop: 50
+
    },
    logout: {
-      alignSelf: 'flex-end',
-     
+      margin: -20,
+      height: 55,
+      width: 118,
+
+      borderWidth: 2,
+      borderRadius: 25,
+      fontSize: 30,
+      padding: 8,
+      backgroundColor: '#9400D3'
+      
+
    }
 
 

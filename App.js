@@ -10,8 +10,8 @@ import Details from './Details';
  
  ///const App = createAppContainer(AppNavigator);
 const Black_pink = createSwitchNavigator({
-   Memberarea: { screen: Memberarea },
    inputs: { screen: inputs },
+   Memberarea: { screen: Memberarea },
    Details: { screen: Details },
    Login: { screen: Login },
 

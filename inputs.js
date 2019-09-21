@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity, TextInput, StyleSheet ,StatusBar , AsyncS
 import Details  from './Details';
 import ImagesExample from './Login';
 
-const userInfo =  {email: '1' , password: '1'}
+const userInfo =  {email: 'usman' , password: '12345'}
 
 
 class Inputs extends Component {
